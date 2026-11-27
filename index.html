@@ -73,6 +73,19 @@
   }
   @media (min-width:600px) and (max-width:1199px){.inner p{max-width:calc(60ch + 48px)}}
 
+
+  /* Keep the embed scrollable, but do not show a browser scrollbar. */
+  html, body {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+
 </style>
 </head>
 <body class="on-dark">
